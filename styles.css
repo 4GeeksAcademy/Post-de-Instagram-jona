@@ -1,0 +1,94 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y fuente */
+body {
+    background: #121212;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Contenedor post */
+.post {
+    background: #1e1e1e;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+/* Header del post */
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.username {
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.post-header i {
+    cursor: pointer;
+}
+
+/* Imagen principal */
+.post-image img {
+    width: 100%;
+    display: block;
+}
+
+/* Iconos */
+.post-icons {
+  display: flex;
+  justify-content: space-between; /* separa grupos a los extremos */
+  padding: 10px 15px;
+  font-size: 24px;
+  color: #e0e0e0;
+}
+
+/* Los tres iconos juntos */
+.left-icons {
+  display: flex;
+  gap: 15px; /* espacio entre iconos */
+}
+
+/* Opcional: cursor pointer y hover para todos */
+.post-icons i {
+  cursor: pointer;
+}
+
+.post-icons i:hover {
+  color: #ed4956; /* efecto hover rojo */
+}
+
+
+/* Likes */
+.post-likes {
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+/* Comentarios */
+.post-caption {
+    padding: 10px 15px 20px;
+}
+
+.post-caption strong {
+    margin-right: 5px;
+}
